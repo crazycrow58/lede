@@ -14,7 +14,7 @@ on:
     branches: 
       - master
   schedule:
-    - cron: 0 23 * * *
+    - cron: 0 4 * * *
   release:
     types: [published]
 
@@ -6502,9 +6502,7 @@ jobs:
 
           #
           # Xorg
-          #
 
-          #
           # Font-Utils
           #
           # CONFIG_PACKAGE_fontconfig is not set
