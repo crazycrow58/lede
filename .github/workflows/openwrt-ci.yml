@@ -77,10 +77,13 @@ jobs:
           # OpenWrt Configuration
           #
           cat >> .config <<EOF
+          CONFIG_MODULES=y
+          CONFIG_HAVE_DOT_CONFIG=y
           CONFIG_TARGET_ipq40xx=y
           CONFIG_TARGET_ipq40xx_generic=y
           CONFIG_TARGET_ipq40xx_generic_DEVICE_p2w_r619ac-128m=y
           CONFIG_LINUX_5_4=y
+          CONFIG_DEFAULT_ath10k-firmware-qca4019-ct=y
           CONFIG_DEFAULT_autocore-arm=y
           CONFIG_DEFAULT_automount=y
           CONFIG_DEFAULT_autosamba=y
@@ -613,10 +616,6 @@ jobs:
           CONFIG_ZABBIX_POSTGRESQL=y
           CONFIG_PACKAGE_htop=y
           CONFIG_PACKAGE_netdata=y
-          CONFIG_PACKAGE_u-boot-fritz1200=y
-          CONFIG_PACKAGE_u-boot-fritz3000=y
-          CONFIG_PACKAGE_u-boot-fritz4040=y
-          CONFIG_PACKAGE_u-boot-fritz7530=y
           CONFIG_PACKAGE_autocore-arm=y
           CONFIG_PACKAGE_automount=y
           CONFIG_PACKAGE_autosamba=y
